@@ -9,7 +9,7 @@ build/
 
 # Logs
 yarn-error.log
-npm-debug.log*
+npm-debug.log* 
 debug.log*
 
 # MacOS files
