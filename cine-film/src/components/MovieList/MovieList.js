@@ -1,9 +1,11 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "../MovieCard/MovieCard";
+
+import styles from "./MovieList.module.css";
 
 const MovieList = ({ movies = [] }) => {
 	return (
-		<div>
+		<div className={styles.movieList}>
 			{movies.map((movie) => (
 				<MovieCard
 					key={movie.id}

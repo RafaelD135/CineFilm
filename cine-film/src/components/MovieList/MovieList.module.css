@@ -1,0 +1,10 @@
+.movieList {
+	display: flex;
+	overflow-x: scroll;
+	padding: 1rem 0;
+
+	scroll-snap-type: x mandatory;
+	
+	/* Défilement automatique */
+	scroll-behavior: smooth;
+}

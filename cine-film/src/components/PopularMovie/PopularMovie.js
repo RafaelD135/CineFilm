@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
-import { getPopularMovies } from "../api/tmdb";
-import MovieList from "./MovieList";
+import { getPopularMovies } from "../../api/tmdb";
+import MovieList from "../MovieList/MovieList";
 
 function PopularMovie() {
 	const [movies, setMovies] = useState([]);
