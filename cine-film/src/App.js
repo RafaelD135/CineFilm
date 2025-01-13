@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let testEnv = process.env.REACT_APP_TEST;
+  console.log(testEnv);
   return (
     <div className="App">
       <header className="App-header">
