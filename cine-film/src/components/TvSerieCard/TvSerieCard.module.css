@@ -1,0 +1,37 @@
+.TvSerieCard {
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.2s;
+	width: 200px;
+	margin: 20px;
+
+	flex: 1 0 200px;
+	margin-left: 1rem;
+	scroll-snap-align: start;
+}
+
+.TvSerieCard:hover {
+	transform: scale(1.05);
+}
+
+.TvSerieCardImage {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.TvSerieCardTitle {
+	font-size: 1.2em;
+	margin: 10px;
+	text-align: center;
+	color: #333;
+}
+
+.TvSerieCardReleaseDate {
+	font-size: 0.9em;
+	margin: 10px;
+	text-align: center;
+	color: #777;
+}
