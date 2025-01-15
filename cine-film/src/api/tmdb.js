@@ -26,4 +26,11 @@ export const getPopularActors = async () => {
 	const data = await response.json();
 	data.results = data.results.slice(0, 10);
 	return data;
-}
+};
+
+export const getVideoNowPlaying = async () => {
+	const response = await fetch(`${BASE_URL}/movie/popular?language=fr-FR&page=1`, options);
+	const data = await response.json();
+	// data.results = data.results.filter((movie) => movie.video === true);
+	return data;
+};
