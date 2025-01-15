@@ -1,0 +1,10 @@
+.actorList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+}
+
+.actorList > * {
+	flex: 1 1 200px;
+}

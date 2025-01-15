@@ -20,3 +20,10 @@ export const getPopularTvSeries = async () => {
 	const data = await response.json();
 	return data;
 };
+
+export const getPopularActors = async () => {
+	const response = await fetch(`${BASE_URL}/person/popular?language=fr-FR&page=1`, options);
+	const data = await response.json();
+	data.results = data.results.slice(0, 10);
+	return data;
+}
