@@ -31,6 +31,16 @@ export const getPopularActors = async () => {
 export const getVideoNowPlaying = async () => {
 	const response = await fetch(`${BASE_URL}/movie/popular?language=fr-FR&page=1`, options);
 	const data = await response.json();
-	// data.results = data.results.filter((movie) => movie.video === true);
+	// garder uniquement les films avec une vidéo
+	console.log(getVideoByIdMovie(558449));
+	// data.results = data.results.filter((movie) => getVideoByIdMovie(movie.id) !== Promise { <pending> });
+	data.results = data.results.slice(0, 5);
+	// console.log(data);
+	return data;
+};
+
+export const getVideoByIdMovie = async (id) => {
+	const response = await fetch(`${BASE_URL}/movie/${id}/videos?language=fr-FR`, options);
+	const data = await response.json();
 	return data;
 };

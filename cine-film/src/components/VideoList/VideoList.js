@@ -4,12 +4,12 @@ import VideoCard from "../VideoCard/VideoCard";
 import styles from "./VideoList.module.css";
 
 const VideoList = ({ MovieWithVideo = [] }) => {
-	console.log(MovieWithVideo)
 	return (
 		<div className={styles.videoList}>
-			{MovieWithVideo.map((MovieWithVideo) => (
+			{MovieWithVideo.map((movie) => (
 				<VideoCard
-					videoKey={MovieWithVideo.id}
+					key={movie.id}
+					videoKey={movie.id}
 				/>
 			))}
 		</div>

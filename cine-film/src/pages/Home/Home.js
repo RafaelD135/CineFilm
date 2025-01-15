@@ -10,9 +10,9 @@ import NowPlayingVideo from '../../components/NowPlayingVideo/NowPlayingVideo';
 function Home() {
 	return (
 		<div className={styles.home}>
-			{/* <PopularMovie />
+			<PopularMovie />
 			<PopularTvSerie />
-			<PopularActor /> */}
+			<PopularActor />
 			<NowPlayingVideo />
 		</div>
 	);
