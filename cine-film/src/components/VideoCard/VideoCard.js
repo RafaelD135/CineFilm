@@ -15,7 +15,7 @@ function VideoCard({ videoKey }) {
 		};
 
 		fetchVideo();
-	}, []);
+	}, [videoKey]);
 
 	if(video && video.length > 0) {
 		return (
