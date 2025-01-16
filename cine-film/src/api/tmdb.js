@@ -31,12 +31,17 @@ export const getPopularActors = async () => {
 export const getVideoNowPlaying = async () => {
 	const response = await fetch(`${BASE_URL}/movie/popular?language=fr-FR&page=1`, options);
 	const data = await response.json();
-	// garder uniquement les films avec une vidéo
-	console.log(getVideoByIdMovie(558449));
-	// data.results = data.results.filter((movie) => getVideoByIdMovie(movie.id) !== Promise { <pending> });
-	data.results = data.results.slice(0, 5);
-	// console.log(data);
-	return data;
+
+	let movieWithVideo = {results: []};
+	for (const movie of data.results) {
+		const video = await getVideoByIdMovie(movie.id);
+		if (video.results.length > 0) {
+			movieWithVideo.results.push(movie);
+		}
+	}
+
+	movieWithVideo.results = movieWithVideo.results.slice(0, 5);
+	return movieWithVideo;
 };
 
 export const getVideoByIdMovie = async (id) => {

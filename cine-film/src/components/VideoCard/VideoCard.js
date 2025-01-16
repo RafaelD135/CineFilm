@@ -24,7 +24,7 @@ function VideoCard({ videoKey }) {
 					className={styles.videoCardIframe}
 					src={`https://www.youtube.com/embed/${video[0].key}`}
 					title="YouTube video player"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					// allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
 				></iframe>
 			</div> 
