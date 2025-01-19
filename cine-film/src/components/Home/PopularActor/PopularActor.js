@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
-import { getPopularActors } from "../../api/tmdb";
+import { getPopularActors } from "../../../api/tmdb";
 import ActorList from "../ActorList/ActorList";
 
 function PopularActor() {

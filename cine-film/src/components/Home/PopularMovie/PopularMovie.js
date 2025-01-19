@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
-import { getPopularMovies } from "../../api/tmdb";
+import { getPopularMovies } from "../../../api/tmdb";
 import MovieList from "../MovieList/MovieList";
 
 function PopularMovie() {

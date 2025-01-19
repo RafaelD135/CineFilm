@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import styles from "./VideoCard.module.css";
 
-import { getVideoByIdMovie } from "../../api/tmdb";
+import { getVideoByIdMovie } from "../../../api/tmdb";
 
 function VideoCard({ videoKey }) {
 	const [video, setVideo] = useState([]);

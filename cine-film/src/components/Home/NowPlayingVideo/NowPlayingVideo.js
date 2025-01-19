@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
-import { getVideoNowPlaying } from "../../api/tmdb";
+import { getVideoNowPlaying } from "../../../api/tmdb";
 import VideoList from "../VideoList/VideoList";
 
 function NowPlayingVideo() {

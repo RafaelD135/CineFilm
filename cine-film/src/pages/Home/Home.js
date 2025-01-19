@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './Home.module.css';
 
-import PopularMovie from '../../components/PopularMovie/PopularMovie';
-import PopularTvSerie from '../../components/PopularTvSerie/PopularTvSerie';
-import PopularActor from '../../components/PopularActor/PopularActor';
-import NowPlayingVideo from '../../components/NowPlayingVideo/NowPlayingVideo';
+import PopularMovie from '../../components/Home/PopularMovie/PopularMovie';
+import PopularTvSerie from '../../components/Home/PopularTvSerie/PopularTvSerie';
+import PopularActor from '../../components/Home/PopularActor/PopularActor';
+import NowPlayingVideo from '../../components/Home/NowPlayingVideo/NowPlayingVideo';
 
 function Home() {
 	return (
