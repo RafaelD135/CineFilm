@@ -1,5 +1,7 @@
 .home {
+	font-family: 'Roboto', sans-serif;
 	min-width: 500px;
 	width: 75%;
 	margin: 0 auto;
+	padding: 0px;
 }
