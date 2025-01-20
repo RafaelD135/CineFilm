@@ -1,0 +1,8 @@
+:root {
+	--primary-color: #0080ff;
+	--secondary-color: #333;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}

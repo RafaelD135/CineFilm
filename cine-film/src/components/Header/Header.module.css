@@ -1,25 +1,60 @@
 .header {
+	color: #000000;
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
-	color: #000000;
-	width: 100%;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logoContainer {
+.logo {
 	display: flex;
 	align-items: center;
+	width: auto;
 }
 
-.headerLogo {
-	width: 50px;
-	height: auto;
+.logoImage {
+	height: 60px;
 	margin-right: 10px;
 }
 
-.headerTitle {
-	font-size: 1.5rem;
-	font-weight: 700;
+.logoText {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.nav {
+	display: flex;
+	width: 100%;
+}
+
+.navList {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.navItem {
+	margin-left: 20px;
+}
+
+.navLink {
+	text-decoration: none;
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	transition: border-bottom 0.08s ease-in;
+}
+
+.navLink:hover {
+	border-bottom: 3px solid var(--primary-color);
+}
+
+.active {
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	border-bottom: 3px solid var(--primary-color);
 }
