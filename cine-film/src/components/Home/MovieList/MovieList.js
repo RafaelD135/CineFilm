@@ -11,7 +11,7 @@ const MovieList = ({ movies = [] }) => {
 					key={movie.id}
 					title={movie.title}
 					posterPath={movie.poster_path}
-					releaseDate={movie.release_date}
+					voteCount={movie.vote_average}
 				/>
 			))}
 		</div>

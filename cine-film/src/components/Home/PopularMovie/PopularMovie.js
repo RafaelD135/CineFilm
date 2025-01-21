@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { getPopularMovies } from "../../../api/tmdb";
 import MovieList from "../MovieList/MovieList";
 
+import styles from "./PopularMovie.module.css"
+
 function PopularMovie() {
 	const [movies, setMovies] = useState([]);
 
@@ -17,8 +19,8 @@ function PopularMovie() {
 	}, []);
 
 	return (
-		<div>
-			<h1>Films populaires</h1>
+		<div className={styles.popularMovie}>
+			<h1 className ={styles.popularMovieText}>Films populaires</h1>
 			<MovieList movies={movies} />
 		</div>
 	);

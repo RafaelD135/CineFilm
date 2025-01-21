@@ -1,8 +1,10 @@
 :root {
 	--primary-color: #0080ff;
 	--secondary-color: #333;
+	--background-color: #F2F2F2;
 }
 
 body{
 	font-family: 'Roboto', sans-serif;
+	background-color: var(--background-color);
 }

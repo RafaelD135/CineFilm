@@ -1,11 +1,9 @@
 .movieCard {
-	background-color: #f0f0f0;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	transition: transform 0.2s;
+	position: relative;
 	width: 200px;
 	margin: 20px;
+	overflow: hidden;
+	transition: transform 0.2s;
 
 	flex: 1 0 200px;
 	margin-left: 1rem;
@@ -14,24 +12,29 @@
 
 .movieCard:hover {
 	transform: scale(1.05);
+	cursor: pointer;
+	color: var(--primary-color);
 }
 
 .movieCardImage {
 	width: 100%;
 	height: auto;
-	display: block;
+	display: block;	
+}
+
+.informations {
+	padding: 10px;
+	text-align: center;
 }
 
 .movieCardTitle {
 	font-size: 1.2em;
-	margin: 10px;
-	text-align: center;
-	color: #333;
+	margin: 10px 0;
+	transition: color 0.2s;
 }
 
 .movieCardReleaseDate {
 	font-size: 0.9em;
-	margin: 10px;
-	text-align: center;
-	color: #777;
+	margin: 10px 0;
+	transition: color 0.2s;
 }
