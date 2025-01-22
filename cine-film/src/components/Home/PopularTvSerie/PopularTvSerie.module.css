@@ -1,0 +1,18 @@
+.popularTvSerie {
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.popularTvSerieText::before {
+    content: "";
+	position: absolute;
+	width: .3125rem;
+	height: 35px;
+	background: var(--primary-color);
+	border-radius: .625rem;
+	margin-left: -10px;
+}
+
+.popularTvSerieText{
+	margin: 0px;
+}

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { getPopularTvSeries } from "../../../api/tmdb";
 import TvSerieList from "../TvSerieList/TvSerieList";
 
+import styles from "./PopularTvSerie.module.css"
+
 function PopularMovie() {
 	const [series, setSeries] = useState([]);
 
@@ -17,8 +19,8 @@ function PopularMovie() {
 	}, []);
 
 	return (
-		<div>
-			<h1>Séries populaires</h1>
+		<div className={styles.popularTvSerie}>
+			<h1 className={styles.popularTvSerieText}>Séries populaires</h1>
 			<TvSerieList series={series} />
 		</div>
 	);

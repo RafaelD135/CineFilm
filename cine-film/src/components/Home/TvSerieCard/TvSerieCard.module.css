@@ -1,12 +1,11 @@
 .TvSerieCard {
-	background-color: #f0f0f0;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 200px;
+	margin: 0px;
 	overflow: hidden;
 	transition: transform 0.2s;
-	width: 200px;
-	margin: 20px;
-
+	display: flex;
+	flex-direction: column;
 	flex: 1 0 200px;
 	margin-left: 1rem;
 	scroll-snap-align: start;
@@ -14,24 +13,72 @@
 
 .TvSerieCard:hover {
 	transform: scale(1.05);
+	cursor: pointer;
+	color: var(--primary-color);
 }
 
 .TvSerieCardImage {
 	width: 100%;
 	height: auto;
 	display: block;
+	object-fit: cover;
+}
+
+.informations {
+	padding: 5px;
+	text-align: center;
 }
 
 .TvSerieCardTitle {
 	font-size: 1.2em;
-	margin: 10px;
-	text-align: center;
-	color: #333;
+	margin: 0px 0;
+	transition: color 0.2s;
 }
 
-.TvSerieCardReleaseDate {
+.TvSerieCardGenres {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.TvSerieCardGenre {
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px 10px;
+	font-size: 0.8em;
+	color: #333;
+	transition: background-color 0.2s;
+	font-weight: bold;
+}
+
+.TvSerieCardVoteAverage {
 	font-size: 0.9em;
-	margin: 10px;
+	margin: 5px auto;
+	transition: color 0.2s;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-weight: bold;
 	text-align: center;
-	color: #777;
+	display: inline-block;
+}
+
+.darkGreen {
+	background-color: #33734e;
+	color: white;
+}
+
+.green {
+	background-color: #27ae60;
+	color: white;
+}
+
+.orange {
+	background-color: #ff5733;
+	color: white;
+}
+
+.red {
+	background-color: #c0392b;
+	color: white;
 }

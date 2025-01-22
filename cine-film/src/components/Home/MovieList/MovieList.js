@@ -9,12 +9,10 @@ const MovieList = ({ movies = [] }) => {
 
 	useEffect(() => {
 		const fetchGenres = async () => {
-			// Créer un objet contenant les genres pour chaque film
 			const genresMap = {};
 			for (const movie of movies) {
 				const genreId = movie.genre_ids[0];
 				if (!genresMap[genreId]) {
-					// Récupère le genre si non déjà chargé
 					genresMap[genreId] = await getGenreById(genreId);
 				}
 			}
