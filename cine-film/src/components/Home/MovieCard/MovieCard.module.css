@@ -1,7 +1,7 @@
 .movieCard {
 	position: relative;
 	width: 200px;
-	margin: 20px;
+	margin: 0px;
 	overflow: hidden;
 	transition: transform 0.2s;
 
@@ -47,6 +47,7 @@
 	font-size: 0.8em;
 	color: #333;
 	transition: background-color 0.2s;
+	font-weight: bold;
 }
 
 .movieCardVoteAverage {
@@ -54,28 +55,28 @@
 	margin: 5px auto;
 	transition: color 0.2s;
 	padding: 5px 10px;
-	width: 55px;
 	border-radius: 10px;
 	font-weight: bold;
 	text-align: center;
+	display: inline-block;
 }
 
-.green {
-	background-color: #4caf50;
+.darkGreen {
+	background-color: #33734e ;
 	color: white;
 }
 
-.yellow {
-	background-color: #ffeb3b;
-	color: #333;
+.green {
+	background-color: #27ae60 ;
+	color: white;
 }
 
 .orange {
-	background-color: #ff9800;
+	background-color: #ff5733;
 	color: white;
 }
 
 .red {
-	background-color: #f44336;
+	background-color: #c0392b ;
 	color: white;
 }
