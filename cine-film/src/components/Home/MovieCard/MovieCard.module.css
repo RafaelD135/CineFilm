@@ -23,7 +23,7 @@
 }
 
 .informations {
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
 }
 
@@ -33,24 +33,49 @@
 	transition: color 0.2s;
 }
 
-.movieCardVoteCount {
-	font-size: 0.9em;
-	margin: 5px 0;
-	transition: color 0.2s;
-}
-
 .movieCardGenres {
 	display: flex;
 	justify-content: center;
 	gap: 5px;
-	margin-top: 10px;
 }
 
 .movieCardGenre {
 	background-color: #e0e0e0;
 	border-radius: 5px;
-	padding: 5px 10px;
+	margin-top: 5px;
+	padding: 5px 10px;	
 	font-size: 0.8em;
 	color: #333;
 	transition: background-color 0.2s;
+}
+
+.movieCardVoteAverage {
+	font-size: 0.9em;
+	margin: 5px auto;
+	transition: color 0.2s;
+	padding: 5px 10px;
+	width: 55px;
+	border-radius: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.green {
+	background-color: #4caf50;
+	color: white;
+}
+
+.yellow {
+	background-color: #ffeb3b;
+	color: #333;
+}
+
+.orange {
+	background-color: #ff9800;
+	color: white;
+}
+
+.red {
+	background-color: #f44336;
+	color: white;
 }

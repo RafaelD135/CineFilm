@@ -31,7 +31,7 @@ const MovieList = ({ movies = [] }) => {
 					key={movie.id}
 					title={movie.title}
 					posterPath={movie.poster_path}
-					voteCount={movie.vote_average}
+					voteAverage={movie.vote_average.toFixed(1)}
 					genre={genres[movie.genre_ids[0]]?.name}
 					genre2={genres[movie.genre_ids[1]]?.name}
 				/>
