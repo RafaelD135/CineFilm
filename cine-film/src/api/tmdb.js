@@ -61,3 +61,10 @@ export const getVideoByIdMovie = async (id) => {
 	const data = await response.json();
 	return data;
 };
+
+// Methode pour recuperer un genre par son id 
+export const getGenreById = async (id) => {
+	const response = await fetch(`${BASE_URL}/genre/movie/list?language=fr-FR`, options);
+	const data = await response.json();
+	return data.genres.find((genre) => genre.id === id);
+};
