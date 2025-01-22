@@ -1,0 +1,80 @@
+.momentMovieSelected {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	width: 200px;
+}
+
+.momentMovieSelectedImage {
+	width: auto;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.synopsisText {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: justify;
+	color: #000000;
+}
+
+.momentMovieSelectedText {
+	text-align: justify;
+	color: #000000;
+	font-size: 0.90em;
+}
+
+.rightColumn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.momentMovieSelectedTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.momentMovieSelectedTitle {
+	font-size: 2em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 20px;
+	color: #000000;
+}
+
+.seeMore {
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 50px;
+	padding : 10px 15px 10px 15px;
+	font-weight: bold;
+	font-size: 1em;
+	transition: all 0.3s;
+	user-select: none;
+}
+
+.seeMore:hover {
+	cursor: pointer;
+	background-color: #000000;
+	scale: 1.05;
+}
+
+.momentMovieSelectedReleaseDate {
+	font-size: 1em;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #000000;
+}
+
+.momentMovieSelectedVideo {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
