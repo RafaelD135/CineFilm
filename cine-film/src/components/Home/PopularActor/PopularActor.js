@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { getPopularActors } from "../../../api/tmdb";
 import ActorList from "../ActorList/ActorList";
 
+import styles from "./PopularActor.module.css"
+
 function PopularActor() {
 	const [actors, setActors] = useState([]);
 
@@ -17,8 +19,8 @@ function PopularActor() {
 	}, []);
 
 	return (
-		<div>
-			<h1>Acteurs populaires</h1>
+		<div className={styles.popularAcor}>
+			<h1 className={styles.popularActorText}>Acteurs populaires</h1>
 			<ActorList actors={actors} />
 		</div>
 	);

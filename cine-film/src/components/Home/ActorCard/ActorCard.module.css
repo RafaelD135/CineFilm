@@ -1,15 +1,18 @@
 .actorCard {
 	background-color: #f0f0f0;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	transition: transform 0.2s;
-	width: 200px;
+	width: 100%;
+	max-width: 200px;
+	min-width: 150px;
 	margin: 20px;
+	flex: 1 1 20vw;
 }
 
 .actorCard:hover {
 	transform: scale(1.05);
+	cursor: pointer;
+	color: var(--primary-color);
 }
 
 .actorCardImage {
@@ -22,5 +25,4 @@
 	font-size: 1.2em;
 	margin: 10px;
 	text-align: center;
-	color: #333;
 }
