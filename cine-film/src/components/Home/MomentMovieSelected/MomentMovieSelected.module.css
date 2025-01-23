@@ -1,4 +1,5 @@
 .momentMovieSelected {
+	flex: 1;
 	display: flex;
 	gap: 20px;
 	padding: 20px;
@@ -75,6 +76,7 @@
 
 .momentMovieSelectedVideo {
 	width: 100%;
-	height: 100%;
+	aspect-ratio: 16 / 9;
+	max-height: 85%;
 	border: none;
 }

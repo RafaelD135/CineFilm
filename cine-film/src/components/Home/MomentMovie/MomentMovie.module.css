@@ -1,6 +1,6 @@
 .momentMovie {
-	margin-bottom: 1cqb;
+	margin-bottom: 20px;
 	padding: 10px;
-	height: 80vh;
-	background-color: #20201d0c;
+	height: 600px;
+	display: flex;
 }
