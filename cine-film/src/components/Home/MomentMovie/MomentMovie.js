@@ -28,6 +28,10 @@ function MomentMovie() {
 
 	const handleMovieClick = (movie) => {
 		setSelectedMovie(movie);
+		setMovies((prevMovies) => {
+			const newMovies = prevMovies.filter((prevMovie) => prevMovie.id !== movie.id);
+			return [...newMovies, selectedMovie];
+		});
 	};
 
 
@@ -54,6 +58,7 @@ function MomentMovie() {
 			/>
 			<MomentOtherMovie className={styles.momentOtherMovie}
 				movies={movies}
+				setSelectedMovie={handleMovieClick}
 			/>
 		</div>
 	);

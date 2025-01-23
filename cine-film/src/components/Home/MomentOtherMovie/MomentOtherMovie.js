@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './MomentOtherMovie.module.css';
 
-function MomentOtherMovie({ movies }) {
+function MomentOtherMovie({ movies, setSelectedMovie }) {
 	return (
 		<div className={styles.momentOtherMovie}>
 			{movies.map((movie) => (
@@ -11,6 +11,7 @@ function MomentOtherMovie({ movies }) {
 					src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
 					alt={movie.title}
 					className={styles.momentOtherMovieImage}
+					onClick={() => setSelectedMovie(movie)}
 				/>
 			))}
 		</div>
