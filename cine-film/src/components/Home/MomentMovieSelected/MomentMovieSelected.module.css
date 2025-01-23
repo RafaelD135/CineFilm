@@ -13,8 +13,8 @@
 }
 
 .momentMovieSelectedImage {
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	margin-bottom: 10px;
 }
 
@@ -29,6 +29,7 @@
 	text-align: justify;
 	color: #000000;
 	font-size: 0.90em;
+	overflow-y: auto;
 }
 
 .rightColumn {
