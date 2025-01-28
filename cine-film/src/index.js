@@ -20,7 +20,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/movies" element={<Movie />} />
 				<Route path="/series" element={<Series />} />
-				<Route path="/movies/:id" element={<MovieDetail />} />
+				<Route path="/moviedetail/:id" element={<MovieDetail />} />
 			</Routes>
 		</Router>
 	</React.StrictMode>
