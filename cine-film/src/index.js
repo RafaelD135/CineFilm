@@ -5,6 +5,8 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Movie from './pages/Movies/Movies'
 import Series from './pages/Series/Series'
+import MovieDetail from './pages/MovieDetail/MovieDetail'
+
 import Header from './components/Header/Header'
 
 import './styles/index.css'
@@ -18,6 +20,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/movies" element={<Movie />} />
 				<Route path="/series" element={<Series />} />
+				<Route path="/movies/:id" element={<MovieDetail />} />
 			</Routes>
 		</Router>
 	</React.StrictMode>
