@@ -50,6 +50,7 @@ function MomentMovie() {
 		<div className={styles.momentMovie}>
 			<MomentMovieSelected className={styles.momentMovieSelected}
 				key={selectedMovie?.id}
+				id={selectedMovie?.id}
 				title={selectedMovie?.title}
 				posterPath={selectedMovie?.poster_path}
 				releaseDate={selectedMovie?.release_date}
