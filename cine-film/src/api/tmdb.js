@@ -58,7 +58,7 @@ export const getVideoNowPlaying = async () => {
 // Methode pour récupérer les videos d'un film en fonction de son id
 export const getVideoByIdMovie = async (id) => {
 	const response = await fetch(`${BASE_URL}/movie/${id}/videos?language=fr-FR`, options);
-	const data = await response.json();
+	const data = await response.json();	
 	return data;
 };
 
@@ -67,4 +67,11 @@ export const getGenreById = async (id) => {
 	const response = await fetch(`${BASE_URL}/genre/movie/list?language=fr-FR`, options);
 	const data = await response.json();
 	return data.genres.find((genre) => genre.id === id);
+};
+
+// Methode pour recuperer les films par leur id
+export const getMovieById = async (id) => {
+	const response = await fetch(`${BASE_URL}/movie/${id}?language=fr-FR`, options);
+	const data = await response.json();
+	return data;
 };
