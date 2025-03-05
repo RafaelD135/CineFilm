@@ -1,6 +1,6 @@
 # Cinéfilm 🎬
 
-**Statut** : _En cours de développement_
+**Statut** : _En cours de développement(en pause)_
 
 ## Description
 **Cinéfilm** est une application web conçue pour répertorier les films, séries, et acteurs. L'objectif est de fournir une interface intuitive permettant d'explorer et de rechercher des contenus cinématographiques en utilisant l'API TMDB.
