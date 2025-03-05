@@ -12,4 +12,4 @@
 - Mettre en place un design moderne et responsive pour une expérience utilisateur optimale.
 
 ## Aperçu de l'application le 22/01/2025
-![Capture d'écran de l'aperçu de la page d'accueil pour le mpoment 22/01/2025](/apercu.png)
+![Capture d'écran de l'aperçu de la page d'accueil pour le mpoment 22/01/2025](/apercu-5_03_2025.png)
